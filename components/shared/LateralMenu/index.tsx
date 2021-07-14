@@ -13,7 +13,7 @@ export const LateralMenu: React.FC = () => {
       <div className={styles.list}>
         <Link href="/Admin">
           <a>
-            <FontAwesomeIcon icon={faSignal} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faSignal} color="var(--color-gray-light)" className="me-3" />
             Painel Inicial
             <hr />
           </a>
@@ -21,7 +21,7 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/Users/List">
           <a>
-            <FontAwesomeIcon icon={faUser} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faUser} color="var(--color-gray-light)" className="me-3" />
             Usuários
             <hr />
           </a>
@@ -29,7 +29,7 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/Products/List">
           <a>
-            <FontAwesomeIcon icon={faGamepad} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faGamepad} color="var(--color-gray-light)" className="me-3" />
             Produtos
             <hr />
           </a>
@@ -37,7 +37,7 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/Categories/List">
           <a>
-            <FontAwesomeIcon icon={faCheckSquare} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faCheckSquare} color="var(--color-gray-light)" className="me-3" />
             Categorias
             <hr />
           </a>
@@ -45,15 +45,15 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/SystemRequirements/List">
           <a>
-            <FontAwesomeIcon icon={faLaptop} color="var(--color-gray-light)" className="mr-3" />
-              Requisitos do sistema
-              <hr />
+            <FontAwesomeIcon icon={faLaptop} color="var(--color-gray-light)" className="me-3" />
+            Requisitos do sistema
+            <hr />
           </a>
         </Link>
 
         <Link href="/Admin/Coupons/List">
           <a>
-            <FontAwesomeIcon icon={faTicketAlt} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faTicketAlt} color="var(--color-gray-light)" className="me-3" />
             Cupons
             <hr />
           </a>
@@ -61,7 +61,7 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/#">
           <a>
-            <FontAwesomeIcon icon={faDollarSign} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faDollarSign} color="var(--color-gray-light)" className="me-3" />
             Financeiro
             <hr />
           </a>
@@ -69,7 +69,7 @@ export const LateralMenu: React.FC = () => {
 
         <Link href="/Admin/#">
           <a>
-            <FontAwesomeIcon icon={faSignOutAlt} color="var(--color-gray-light)" className="mr-3" />
+            <FontAwesomeIcon icon={faSignOutAlt} color="var(--color-gray-light)" className="me-3" />
             Sair
             <hr />
           </a>
