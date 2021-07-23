@@ -8,10 +8,11 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 interface TitleAdminPanelProps {
   title: string,
   path: string,
-  icon?: IconProp
+  icon?: IconProp,
+  newPath?: string
 }
 
-export const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, path }) => {
+export const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, path, newPath = '#' }) => {
   return (
     <Row className="mt-4">
       {
@@ -22,7 +23,7 @@ export const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, p
             </Col>
 
             <Col lg={{ span: 4, offset: 2 }} xs={8}>
-              <SearchAndIcon icon={icon} />
+              <SearchAndIcon icon={icon} newPath={newPath} />
             </Col>
           </>
           :

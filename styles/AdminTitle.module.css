@@ -17,10 +17,12 @@
   background-color: var(--color-secondary);
   border: none;
   height: 30px;
+  color: white
 }
 
 .input:focus {
   background-color: var(--color-secondary);
+  color: white
 }
 
 .titleButton {
