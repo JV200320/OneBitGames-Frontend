@@ -11,18 +11,18 @@ import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return( 
-  <>
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <Head>
-          <title>OneBitGames</title>
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        </Head>
-        <Component {...pageProps} />
-      </PersistGate>
-    </Provider>
-  </>
+  return (
+    <>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Head>
+            <title>OneBitGames</title>
+            <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+          </Head>
+          <Component {...pageProps} />
+        </PersistGate>
+      </Provider>
+    </>
   )
 }
 

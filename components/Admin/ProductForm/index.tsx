@@ -40,6 +40,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
   const [productImage, setProductImage] = useState('');
 
   const product: Product = useSelector(state => state.product);
+  console.log(product)
 
   // o produto necessita ter uma ou várias categorias e um requisito de sistema, por isso precisamos fazer o fetch dos mesmos e listá-los no form para utilização.
   // length=999 para pegar 999 categorias e 999 requerimentos de sistema
@@ -138,7 +139,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
           />
 
           <Col lg={8}>
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} md={6} sm={12} className="p-2">
                 <Form.Label>Nome</Form.Label>
                 <Form.Control
@@ -167,9 +168,9 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                   }
                 />
               </Form.Group>
-            </Form.Row>
+            </Row>
 
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} sm={12} className="p-2">
                 <Form.Label>Descrição</Form.Label>
                 <Form.Control
@@ -185,9 +186,9 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                   required
                 />
               </Form.Group>
-            </Form.Row>
+            </Row>
 
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} sm={12} className="p-2">
                 <Form.Label>Categorias</Form.Label>
                 <Form.Control
@@ -210,9 +211,9 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                   }
                 </Form.Control>
               </Form.Group>
-            </Form.Row>
+            </Row>
 
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} md={6} sm={12} className="p-2">
                 <Form.Label>Modo</Form.Label>
                 <Form.Control
@@ -245,9 +246,9 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                 >
                 </Form.Control>
               </Form.Group>
-            </Form.Row>
+            </Row>
 
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} md={6} sm={12} className="p-2">
                 <Form.Label>Data de Lançamento</Form.Label>
                 <Form.Control
@@ -290,9 +291,9 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                   }
                 </Form.Control>
               </Form.Group>
-            </Form.Row>
+            </Row>
 
-            <Form.Row>
+            <Row>
               <Form.Group as={Col} md={6} sm={12} className="p-2">
                 <Form.Label>Preço</Form.Label>
                 <Form.Control
@@ -324,7 +325,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ handleSubmit, action = 'Adici
                 </Form.Control>
               </Form.Group>
 
-            </Form.Row>
+            </Row>
 
           </Col>
         </Row>
