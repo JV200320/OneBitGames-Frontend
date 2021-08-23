@@ -16,7 +16,7 @@ export const AdminHeader: React.FC<AdminHeaderProps> = ({ name }) => {
 
   return (
     <Row className={styles.background}>
-      <Col lg={6} xs>
+      <Col lg={6} xs={12} className={styles.menu}>
         <Link href="/Admin">
           <a>
             <FontAwesomeIcon
@@ -82,11 +82,9 @@ export const AdminHeader: React.FC<AdminHeaderProps> = ({ name }) => {
         </Link>
       </Col>
 
-      <Col lg={6} xs>
-        <div className='float-end'>
-          <span className={styles.name}>{name}</span>
-          <FontAwesomeIcon icon={faUserCircle} color="var(--color-gray-light)" />
-        </div>
+      <Col lg={6} xs={3} className={styles.profile}>
+        <span className={styles.name}>{name}</span>
+        <FontAwesomeIcon icon={faUserCircle} color="var(--color-gray-light)" />
       </Col>
     </Row>
   )
