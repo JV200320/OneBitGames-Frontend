@@ -6,8 +6,11 @@ import search from './admin/shared/search/reducer';
 
 import category from './admin/category/reducer';
 
+import product from './admin/product/reducer'
+
 export default combineReducers({
   auth,
   category,
-  search
+  search,
+  product
 });

@@ -22,10 +22,10 @@ export const AdminListTable: React.FC<AdminListTableProps> =
         <Table borderless={true} hover={true} responsive={true}>
           <thead>
             <tr>
-              {first_title && <th>{first_title}</th>}
-              {second_title && <th>{second_title}</th>}
-              {third_title && <th>{third_title}</th>}
-              {fourth_title && <th>{fourth_title}</th>}
+              {first_title && <th className="text-center">{first_title}</th>}
+              {second_title && <th className="text-center">{second_title}</th>}
+              {third_title && <th className="text-center">{third_title}</th>}
+              {fourth_title && <th className="text-center">{fourth_title}</th>}
               {fifth_title && <th>{fifth_title}</th>}
               {sixth_title && <th>{sixth_title}</th>}
               <th colSpan={2}>Ações</th>
