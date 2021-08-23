@@ -2,7 +2,7 @@ import React from 'react';
 import { InputGroup, FormControl, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import styles from '../../../../styles/AdminTitle.module.css';
+import styles from './styles.module.css';
 import { StyledButton } from '../../StyledButton';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Link from 'next/link';
@@ -56,7 +56,7 @@ export const SearchAndIcon: React.FC<SearchAndIcon> = ({ newPath, icon }) => {
             </InputGroup>
           </Col>
 
-          <Col lg={3} xs={2} className="mt-1" style={{ cursor: 'pointer' }}>
+          <Col lg={3} xs={2} className={styles.search_icon} style={{ cursor: 'pointer' }}>
             <FontAwesomeIcon icon={faSearch}
               size="lg"
               color="var(--color-gray-light)"
