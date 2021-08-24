@@ -11,10 +11,14 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   active?: boolean
 }
 
-export const StyledButton: React.FC<ButtonProps> = ({ icon, action, type_button, ...rest }) => {
+export const StyledButton: React.FC<ButtonProps> = ({ icon, action, type_button, active = false, ...rest }) => {
   return (
     <Button
-      className={(type_button == "red") ? styles.red_button : styles.blue_button}
+      className={`
+        ${(type_button == "red") ? styles.red_button : styles.blue_button} 
+        ${active ? 'active' : ''}
+      `
+      }
       {...rest}
     >
       {icon && <FontAwesomeIcon icon={icon} className={action && "mr-2"} />} {action}
